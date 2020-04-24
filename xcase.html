@@ -56,14 +56,12 @@
 }
 </style>
 <script src="js/print.js"></script>
+<script src="print.js"></script>
 <link rel="stylesheet" type="text/css" href="css/print.css">
 </head>
 <body>
 <!-- KODE KASUS & NAMA -->
- <button type="button" onclick="printJS('printJS-page', 'html')">
-    Print Page
- </button>
-<div id="printJS-page">
+<div id="page">
 <h2 style="text-align: center;"><span style="color: #ff0000;"><strong>00000 - Lorem Ipsum</strong></span></h2>
 <p style="text-align: center;">
 <!-- PASANG FOTO DISINI -->
@@ -75,7 +73,7 @@
 <!-- BIODATA DASAR -->
 <div style="overflow:auto">
   <div class="menu">
- </div>
+   </div>
  </div>
 <div class="main">
 <p style="text-align: left;">
@@ -154,7 +152,9 @@
     <br>
 </div>
 <!-- FOOTER OFFICIAL -->
-<div class="footer">© OSINT - Open Source Intelligence Research Indonesia</div>
+<div class="footer">© OSINT - Open Source Intelligence Research Indonesia <button type="button" onclick="printJS('page', 'html')">
+    Print Page
+ </button></div>
 </div>
 </body>
 </html>
