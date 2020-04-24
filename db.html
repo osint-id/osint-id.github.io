@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>Databases | OSINT - Indonesia</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<MARQUEE>Open Source Intelligence Research Group</MARQUEE>
+<h2 style="text-align: center;"><strong>Database Lists</strong></h2>
+<h3 style="text-align: center;"><strong>Open Source Intelligence Research Group</strong></h3>
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="#">Databases</a>
+    <a href="resources.html">Resources</a>
+    <a href="connect.html">Contact</a>
+  </div>
+
+  <div class="main">
+  <p>Please select databases.</p>
+  <em><p>Click on the arrow(s) to open or close the tree branches.</p></em>
+  <p>+=============================+</p>
+    <ul id="myUL">
+  <li><span class="caret">Local DB</span>
+    <ul class="nested">
+      <li><span class="caret">Kasus</span>
+        <ul class="nested">
+          <li>Kriminal</li>
+          <li>Orang Hilang</li>
+          <li>Tidak diketahui</li>
+          <li>Diselesaikan</li>
+        </ul>
+      </li>
+      <p></p>
+      <li><span class="caret">Media & Informasi</span>
+        <ul class="nested">
+        <li>Hoaks / Salah</li>
+        <li>Fakta</li>
+        <li>Tidak diketahui</li>
+        </ul>
+   </ul>
+  </li>
+  <p></p>
+  <li><span class="caret">Imported DB (Language : English)</span>
+      <ul class="nested">
+         <li><span class="caret">Cases</span>
+             <ul class="nested">
+             <li>Criminal</li>
+             <li>Missing</li>
+             <li>Unidentified</li>
+             <li>Closed</li>
+             </ul>
+         </li>
+         <p></p>
+         <li><span class="caret">Media & Informations</span>
+             <ul class="nested">
+                 <li>Hoax / False Informations</li>
+                 <li>Fact</li>
+                 <li>Unidentified</li>
+             </ul>
+         </li>
+      </ul>
+  </li>
+</ul>
+<p>+=============================+</p>
+	<p>&nbsp;</p>
+	<p><strong>Note : </strong></p>
+	<blockquote>
+		<p>Komunitas, website dan forum ini masih dalam tahap pengembangan. jika anda memiliki pertanyaan silahkan hubungi e-mail di atas dan akan kami jawab dengan senang hati :).</p>
+	</blockquote>
+  </div>
+
+  <div class="right">
+    <h2>Peringatan!</h2>
+    <p>Lorem Ipsums</p>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© OSINT - Open Source Intelligence Research Indonesia</div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+</body>
+</html>
